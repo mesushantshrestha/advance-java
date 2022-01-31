@@ -1,0 +1,9 @@
+public class libraryException extends Exception{
+  public libraryException (){
+  super("Error!!");
+  }// default constructor
+  public vehicleException(String errorMessage){
+  super(errorMessage);
+  }// overload constructor
+
+}

@@ -1,0 +1,4 @@
+create database lottery;
+use lottery;
+create table lotteryInformation(playedNumber char(8), typeOfLottery varchar(20),
+amount int, playMultiplier char(4));

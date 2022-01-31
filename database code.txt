@@ -1,0 +1,17 @@
+mysql -u root
+create table student (
+studentId char(3) primary key not null,
+firstName varchar(20), lastName varchar(20), 
+year int, 
+balance double);
+select * from student; 
+insert into student values ('101', 'John', 'Doe' ,1, 25000.00);
+insert into student values ('102', 'Sushant', 'Shrestha' ,3, 0.00);
+insert into student values ('103', 'Shaan', 'Smith' ,2, 5000.00);
+insert into student values ('104', 'Jay', 'McKathy' ,4, 1000.00);
+
+select * from student where balance>0 order by balance;
+
+update student set lastName= 'Andrew' where studentId ='103';  
+
+delete from student where studentId= '104';

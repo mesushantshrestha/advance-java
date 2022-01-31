@@ -1,0 +1,12 @@
+
+
+public class TollFee1{
+  public TollFee1(){
+  
+  
+  }
+  public static void main(String[]args){
+  TollFee1 app= new TollFee1();
+  }
+
+}

@@ -1,0 +1,9 @@
+public class vehicleException extends Exception{
+  public vehicleException (){
+  super("Error: Amount is required!!!");
+  }// default constructor
+  public amountException(String errorMessage){
+  super(errorMessage);
+  }// overload constructor
+
+}

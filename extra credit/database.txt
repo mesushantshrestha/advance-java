@@ -1,0 +1,5 @@
+create database arlibrary;
+use arlibrary;
+create table book( isbn char(9) primary key not null, title varchar(50));
+insert into book values('123456780', 'Absolute java');
+

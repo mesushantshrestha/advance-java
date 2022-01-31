@@ -1,0 +1,8 @@
+
+create table student (
+studentId char(3) primary key not null,
+firstName varchar(20), lastName varchar(20), 
+year int, 
+balance double);
+select * from student; 
+insert into student values ('101', 'John', 'Doe' ,1, 25000.00);

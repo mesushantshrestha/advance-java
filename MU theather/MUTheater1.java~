@@ -1,0 +1,5 @@
+import java.awt.JFrame;
+public class MUTheater1 extends JFrame{
+
+
+}// end of public class

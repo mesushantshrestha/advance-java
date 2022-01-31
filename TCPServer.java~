@@ -1,0 +1,24 @@
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+public class TCPServer {
+  public static void main(String []args){
+    System.out.println("Server is running...");
+    try{
+    ServerSocket serverSocket= new ServerSocket(1098, 500);
+    Socket socket= serverSocket.accept();
+    ObjectInputStream inputStream= new ObjectInputStream(socket.getInputStream());
+    String messageFromClient= (String) inputStream.readObject();
+    System.out.println("Client Says: "+ messageFromClient);
+    
+    }
+    catch(IOException e){
+    e.printStackTrace();
+    }
+    catch(ClassNotFoundException e){
+    e.printStackTrace();
+    }
+    System.out.println("Server ended...");
+  }
+}

@@ -1,0 +1,5 @@
+Your Lottery Summary:
+Lottery Type: 
+Amount: $
+Playing Number: 1234
+Play Multiplier: No

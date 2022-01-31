@@ -1,0 +1,36 @@
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.BorderLayout;
+import javax.swing.JTextField;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+public class GasStation1 extends JFrame {
+  private JLabel amount;
+  private JButton pay, print, clear;
+  private JPanel southPanel, centerPanel, NorthPanel;
+  private ImageIcon gasPic, washPic;
+  public GasStation1(){
+    super("Gas Station Cashier");
+    
+    
+    pay= new JButton("Pay");
+    southPanel= new JPanel();
+    southPanel.add(pay);
+    print= new JButton("Print Receipt");
+    southPanel.add(print);
+    clear= new JButton("Clear");
+    southPanel.add(clear);
+    add(southPanel, BorderLayout.SOUTH);
+    
+  setVisible(true);
+  setSize(400,200);
+  setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  setTitle("Gas Station Cashier");
+  }//end of constructor
+
+  public static void main(String []args){
+    GasStation1 app= new GasStation1();
+  }//end of main 
+}// end of class
